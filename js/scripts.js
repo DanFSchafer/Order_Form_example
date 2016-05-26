@@ -1,21 +1,20 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
+    var fNameInput = $("input#fName").val();
+    var lNameInput = $("input#lName").val();
+    var address1Input= $("input#address1").val();
+    var address2Input = $("input#address2").val();
+    var productInput = $("input#product").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    $(".fName").text(fNameInput);
+    $(".lName").text(lNameInput);
+    $(".address1").text(address1Input);
+    $(".address2").text(address2Input);
+    $(".product").text(productInput);
 
     $("#story").show();
 
     event.preventDefault();
+    alert("Thank you for your order " + fNameInput + " " + lNameInput "!")
   });
 });
